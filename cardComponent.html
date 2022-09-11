@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--By default bootstrap changes some things, removes margin, changes font famaily etc.
+        It has cretain breakpoints where certain values change.
+        'container-md' means that every size under medium will be 100% fluid, ie there will be no marrgin, the content will take up 100% of the width.
+        Bootstrap is based on a 12 column system, ww can specify how many spaces a column should take up
+        
+        
+        Below we are creating one row containing two columns. Because we have not stated how many spaces each column should use, they are of equal width taking up all the available space, after margin and a space between.
+        The box class is just being used here as styling to get a visual of the columns.
+        The extension HTML CSS Support will show auto complete eg. col- will display all the classes that can be applied to columns
+        
+        A row in bootstrap uses flexbox to lay everything out, which is why the boxes fill as mush space as they can with a little gap in
+        
+        We can also use class='col-auto', the width of the column will be dependent on the width of it's content
+    
+        There are three levels deep when laying out different components on the page with bootstrap:
+           -container
+           -rows
+           -columns -->
+
+        <!--We can also set the breakpoint on the container class: class='container-md', this means that below the medium screen size the content on the screen would become fluid i.e. no margins
+        Using the class="container-fluid" would mean that at every single breakpoint the content of the page would take up the full width of the page, no margins are applied by bootstrap.
+        The column class builds content inside of the row
+    
+      **breakpoint eg. lg, med, defines what you want to happen at that size and above.-->
+
+      <div class="container">       
+        <div class="card"style="width:200px;">
+            <img class="card-img-top"src="/images/beagle.jpg"/>
+            <div class="card-body">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Subtitle</span>
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                </div>                
+            </div>
+        </div>
+      </div>
+<br>
+<br>
+      <div class="container">       
+        <div class="card"style="width:200px;">
+            <!--to place the image at the body it needs to be below the body class.-->
+            <div class="card-body">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Subtitle</span>
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                </div>                
+            </div>
+            <img class="card-img-bottom"src="/images/beagle.jpg"/>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!--overlay the text on the image-->
+      <div class="container">       
+        <div class="card"style="width:200px;">
+            <img class="card-img"src="/images/beagle.jpg"/>
+            <div class="card-body card-img-overlay">
+                <h2 class="card-title">Title</h2>
+                <span class="card-subtitle">Subtitle</span>
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                </div>                
+            </div>           
+        </div>
+      </div>
+      <br>
+      <br>
+      <!--Add a header and footer-->
+      <div class="container">       
+        <div class="card"style="width:200px;">
+            <h2 class="card-header">Header</h2>                       
+            <div class="card-body">    
+                <h4 class="card-title">Title</h4>     
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                </div>                
+            </div> 
+            <div class="card-footer">Footer</div>          
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <!--Creating a group of cards-->
+      <div class="container">
+        <div class="card-group">
+            <div class="card"style="width:200px;">
+                <h2 class="card-header">Header</h2>                         
+                <div class="card-body"> 
+                    <h4 class="card-title">Title</h4>            
+                    <div class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                    </div>                
+                </div> 
+                <div class="card-footer">Footer</div>          
+            </div>
+            <div class="card"style="width:200px;">
+                <h2 class="card-header">Header</h2>  
+                         
+                <div class="card-body">   
+                    <h4 class="card-title">Title</h4>       
+                    <div class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                    </div>                
+                </div> 
+                <div class="card-footer">Footer</div>          
+            </div>
+            <div class="card"style="width:200px;">
+                <h2 class="card-header">Header</h2>  
+                         
+                <div class="card-body">     
+                    <h4 class="card-title">Title</h4>
+                    <div class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nisi ducimus dolore minus. Aspernatur ex saepe nam? In, natus obcaecati?
+                    </div>                
+                </div> 
+                <div class="card-footer">Footer</div>          
+            </div>
+        </div>
+      </div>
+</body>
+</html>

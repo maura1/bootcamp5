@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--By default bootstrap changes some things, removes margin, changes font famaily etc.
+        It has cretain breakpoints where certain values change.
+        'container-md' means that every size under medium will be 100% fluid, ie there will be no marrgin, the content will take up 100% of the width.
+        Bootstrap is based on a 12 column system, ww can specify how many spaces a column should take up
+        
+        
+        Below we are creating one row containing two columns. Because we have not stated how many spaces each column should use, they are of equal width taking up all the available space, after margin and a space between.
+        The box class is just being used here as styling to get a visual of the columns.
+        The extension HTML CSS Support will show auto complete eg. col- will display all the classes that can be applied to columns
+        
+        A row in bootstrap uses flexbox to lay everything out, which is why the boxes fill as mush space as they can with a little gap in
+        
+        We can also use class='col-auto', the width of the column will be dependent on the width of it's content
+    
+        There are three levels deep when laying out different components on the page with bootstrap:
+           -container
+           -rows
+           -columns -->
+
+        <!--We can also set the breakpoint on the container class: class='container-md', this means that below the medium screen size the content on the screen would become fluid i.e. no margins
+        Using the class="container-fluid" would mean that at every single breakpoint the content of the page would take up the full width of the page, no margins are applied by bootstrap.
+        The column class builds content inside of the row
+    
+      **breakpoint eg. lg, med, defines what you want to happen at that size and above.-->
+
+      <div class="container">
+        <!The button and link look the same-->
+        <h5>1. The button and button link can be made to look the sames</h5>
+        <button class="btn btn-primary">Test</button>
+        <a href="#" class="btn btn-primary">Test</a>
+        <br>
+        <br>
+        <h5>2. A button that looks like a <link rel="stylesheet" href="style.css"></h5>        
+        <button class="btn btn-link">Test</button>
+        <br>
+        <br>
+        <h5>3. Changing the size of the button</h5>
+        <button class="btn btn-primary btn-sm">Test</button>
+        <a href="#" class="btn btn-primary btn-lg">Test</a>
+        <br>
+        <br>
+         <h5>4. Button with an outline</h5>
+        <button class="btn btn-outline-secondary">Test</button>
+         <br>
+         <br>
+         <h5>5. Disabled button</h5>
+        <button class="btn btn-primary" disabled>Test</button>
+        <br>
+        <br>
+        <h5>6. An anchor tag cannot be disabled unless it is set up as a button</h5>        
+        <a class="btn btn-primary disabled">Test</a>
+        <br>
+        <br>
+        <h5>7. Toggle a button between active and disactive states</h5>
+        <button class="btn btn-outline-primary"data-bs-toggle="button">Test</button>
+        <br>
+        <br>
+        <h5>8. Start with the active state, use the aria-pressed="true" class for screen readers</h5>       
+        <button class="btn btn-outline-primary active"data-bs-toggle="button"aria-pressed="true">Test</button>
+        <br>
+        <br>
+        <h5>9. Creating an group of buttons horizontally </h5>        
+        <div class="container">
+          <div class="btn-group btn-group-lg">
+             <button class="btn btn-outline-primary"data-bs-toggle="button">Test</button>
+             <a class="btn btn-outline-primary">Test</a>
+             <a class="btn btn-outline-primary">Test</a>
+             <a class="btn btn-outline-primary">Test</a>
+             <a class="btn btn-outline-primary">Test</a>
+          </div>
+        </div>        
+     </div>
+
+      </div>
+      <br>
+      <br>
+      
+      
+      <div class="container">
+        <div class="btn-group-vertical">
+          <h5>10. Creating a group of buttons vertically, the default class="btn-group" needs to be removed</h5>
+          <button class="btn btn-outline-primary"data-bs-toggle="button">Test</button>
+          <a class="btn btn-outline-primary">Test</a>
+          <a class="btn btn-outline-primary">Test</a>
+          <a class="btn btn-outline-primary">Test</a>
+          <a class="btn btn-outline-primary">Test</a>
+       </div>
+      </div>
+</body>
+</html>

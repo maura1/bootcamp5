@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--By default bootstrap changes some things, removes margin, changes font famaily etc.
+        It has cretain breakpoints where certain values change.
+        'container-md' means that every size under medium will be 100% fluid, ie there will be no marrgin, the content will take up 100% of the width.
+        Bootstrap is based on a 12 column system, ww can specify how many spaces a column should take up
+        
+        
+        Below we are creating one row containing two columns. Because we have not stated how many spaces each column should use, they are of equal width taking up all the available space, after margin and a space between.
+        The box class is just being used here as styling to get a visual of the columns.
+        The extension HTML CSS Support will show auto complete eg. col- will display all the classes that can be applied to columns
+        
+        A row in bootstrap uses flexbox to lay everything out, which is why the boxes fill as mush space as they can with a little gap in
+        
+        We can also use class='col-auto', the width of the column will be dependent on the width of it's content
+    
+        There are three levels deep when laying out different components on the page with bootstrap:
+           -container
+           -rows
+           -columns -->
+
+        <!--We can also set the breakpoint on the container class: class='container-md', this means that below the medium screen size the content on the screen would become fluid i.e. no margins
+        Using the class="container-fluid" would mean that at every single breakpoint the content of the page would take up the full width of the page, no margins are applied by bootstrap.
+        The column class builds content inside of the row
+    
+      **breakpoint eg. lg, med, defines what you want to happen at that size and above.-->
+
+      <!--primary:blue, danger:red, secondry:offgray ,success:green, warning:yellow, info:blue/green, light, dark-->
+      <!--table-striped makes every second row grey.
+          table-striped-columns: striped in the column direction
+          table:hover: whenever we hover over a row it turns grey
+          table-border: add extra borders
+          table-borderless: removes all 
+          table-sm: makes the table smaller by removing padding 
+          <tr class='table-active' turns the row grey.-->
+
+      <div class="container">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Styling a row,color green-->
+                <tr class="table-success">
+                    <td>Tim</td>
+                    <td>Cook</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Sue</td>
+                    <td>Smith</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Neol</td>
+                    <!--styling a cell red-->
+                    <td class="table-danger">San</td>
+                    <td>86</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <br>
+      <p>Wrapping the class in a 'table-responsive class will ensure the table can scroll side to side, we can have it responsive at different breakpoints eg. "table-responsive-lg"</p>
+
+      <!-- A divider can only be added to the head, body or footer of the table using 'table-group-divider'-->
+
+
+
+      <div class="container">
+        <div class="table-responsive">
+
+
+<table class="table table-primary">
+            <thead class="table-group-divider">
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>
+                    <th>Age</th>               
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <!--Styling a row,color green-->
+                <tr class="table-success">
+                    <td>Tim</td>
+                    <td>Cook</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Sue</td>
+                    <td>Smith</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Neol</td>
+                    <!--styling a cell red-->
+                    <td class="table-danger">San</td>
+                    <td>86</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+           
+
+
+
+</body>
+</html>
